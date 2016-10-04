@@ -1,0 +1,5 @@
+xivo-certs (16.13~~) xivo-dev; urgency=medium
+
+  * Initial release.
+
+ -- Etienne Lessard <elessard@proformatique.com>  Tue, 04 Oct 2016 15:14:21 -0400

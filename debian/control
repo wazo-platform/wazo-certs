@@ -1,0 +1,16 @@
+Source: xivo-certs
+Section: admin
+Priority: extra
+Maintainer: XiVO Dev Team <dev+pkg@proformatique.com>
+Uploaders: XiVO Builder Team <release@xivo.io>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: xivo-certs
+Architecture: all
+Depends: ${misc:Depends}, openssl
+Description: XiVO digital certificates
+ XiVO is a system based on a powerful IPBX, to bring an easy to
+ install solution for telephony and related services.
+ .
+ This package manages digital certificates used by XiVO.
