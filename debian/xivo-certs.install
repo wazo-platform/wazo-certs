@@ -1,1 +1,2 @@
 openssl-x509.conf usr/share/xivo-certs
+bin/certificate-needs-subjectaltname usr/share/xivo-certs/bin

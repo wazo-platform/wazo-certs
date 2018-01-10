@@ -11,6 +11,9 @@ case "$1" in
         config=/usr/share/xivo-certs/openssl-x509.conf
         if [ ! -e "$new_key" -o ! -e "$new_cert" ] ; then
             openssl req -x509 -sha256 -nodes -days 3650 -newkey rsa:2048 -config "$config" -keyout "$new_key" -out "$new_cert"
+        elif /usr/share/xivo-certs/bin/certificate-needs-subjectaltname "${new_cert}" ; then
+            # regenerate with subjectAltName
+            openssl req -x509 -sha256 -days 3650 -new -config "${config}" -key "${new_key}" -out "${new_cert}"
         fi
 
         # ensure ownership and permissions

@@ -7,7 +7,9 @@ Standards-Version: 3.9.6
 
 Package: xivo-certs
 Architecture: all
-Depends: ${misc:Depends}, openssl
+Depends: ${misc:Depends},
+         openssl,
+         python3-openssl
 Description: Wazo digital certificates
  Wazo is a system based on a powerful IPBX, to bring an easy to
  install solution for telephony and related services.
