@@ -1,4 +1,4 @@
 cryptography<2
 nose
 pyhamcrest
-pyopenssl==16.2.0
+pyopenssl==19.0.0
