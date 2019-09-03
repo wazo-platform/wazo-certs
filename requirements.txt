@@ -1,2 +1,2 @@
-pyopenssl==16.2.0
+pyopenssl==19.0.0
 cryptography<2
