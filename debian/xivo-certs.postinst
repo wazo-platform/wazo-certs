@@ -7,13 +7,13 @@ case "$1" in
         new_key=/usr/share/xivo-certs/server.key
         new_cert=/usr/share/xivo-certs/server.crt
 
-        # generate X.509 certificates if necessary. Valid for 10 years.
+        # generate X.509 certificates if necessary
         config=/usr/share/xivo-certs/openssl-x509.conf
         if [ ! -e "$new_key" -o ! -e "$new_cert" ] ; then
-            openssl req -x509 -sha256 -nodes -days 865 -newkey rsa:2048 -config "$config" -keyout "$new_key" -out "$new_cert"
+            openssl req -x509 -sha256 -nodes -days 825 -newkey rsa:2048 -config "$config" -keyout "$new_key" -out "$new_cert"
         elif /usr/share/xivo-certs/bin/certificate-needs-subjectaltname "${new_cert}" ; then
             # regenerate with subjectAltName
-            openssl req -x509 -sha256 -days 865 -new -config "${config}" -key "${new_key}" -out "${new_cert}"
+            openssl req -x509 -sha256 -days 825 -new -config "${config}" -key "${new_key}" -out "${new_cert}"
         fi
 
         # ensure ownership and permissions
