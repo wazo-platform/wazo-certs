@@ -18,7 +18,8 @@ case "$1" in
 
         # ensure ownership and permissions
         chown root:www-data "$new_key" "$new_cert"
-        chmod 640 "$new_key" "$new_cert"
+        chmod 640 "$new_key"
+        chmod 644 "$new_cert"
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
