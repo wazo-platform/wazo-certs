@@ -1,4 +1,4 @@
 cryptography==2.6.1
-nose
 pyhamcrest
 pyopenssl==19.0.0
+pytest

@@ -4,4 +4,4 @@ test-setup:
 	true
 
 test:
-	nosetests -x
+	pytest -x
