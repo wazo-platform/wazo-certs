@@ -2,5 +2,19 @@
     templates:
       - wazo-tox-linters
       - wazo-tox-py37
-      - wazo-tox-integration
       - debian-packaging-template
+    check:
+      jobs:
+        - certs-tox-integration:
+            nodeset: runc-debian-buster
+    gate:
+      jobs:
+        - certs-tox-integration:
+            nodeset: runc-debian-buster
+
+- job:
+    name: certs-tox-integration
+    description: Run certs integration tests
+    parent: wazo-tox-integration
+    vars:
+      docker_install_siblings: false
