@@ -12,9 +12,11 @@ def main():
     with open(cert_path, 'r') as cert_file:
         cert = crypto.load_certificate(crypto.FILETYPE_PEM, cert_file.read())
 
-    if (has_wildcard_issuer(cert) and
-            has_wildcard_subject(cert) and
-            not has_subjectaltname(cert)):
+    if (
+        has_wildcard_issuer(cert)
+        and has_wildcard_subject(cert)
+        and not has_subjectaltname(cert)
+    ):
         sys.exit(0)
     else:
         sys.exit(1)
@@ -33,8 +35,10 @@ def has_wildcard_issuer(cert):
 
 
 def has_subjectaltname(cert):
-    extension_names = [cert.get_extension(extension_index).get_short_name()
-                       for extension_index in range(cert.get_extension_count())]
+    extension_names = [
+        cert.get_extension(extension_index).get_short_name()
+        for extension_index in range(cert.get_extension_count())
+    ]
     if b'subjectAltName' in extension_names:
         return True
     return False
