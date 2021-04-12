@@ -6,11 +6,11 @@
     check:
       jobs:
         - certs-tox-integration:
-            nodeset: runc-debian-buster
+            nodeset: pod-debian-10
     gate:
       jobs:
         - certs-tox-integration:
-            nodeset: runc-debian-buster
+            nodeset: pod-debian-10
 
 - job:
     name: certs-tox-integration
