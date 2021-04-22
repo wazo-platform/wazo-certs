@@ -5,12 +5,10 @@
       - debian-packaging-template
     check:
       jobs:
-        - certs-tox-integration:
-            nodeset: runc-debian-buster
+        - certs-tox-integration
     gate:
       jobs:
-        - certs-tox-integration:
-            nodeset: runc-debian-buster
+        - certs-tox-integration
 
 - job:
     name: certs-tox-integration
