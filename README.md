@@ -1,4 +1,3 @@
-xivo-certs
-===========
+# wazo-certs
 
-xivo-certs is a Debian package that manages digital certificates used by Wazo.
+wazo-certs is a Debian package that manages digital certificates used by Wazo.

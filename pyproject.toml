@@ -4,7 +4,7 @@ skip-string-normalization = true
 [tool.flake8]
 show-source = true
 max-line-length = 99
-application-import-names = "xivo-certs"
+application-import-names = "wazo-certs"
 ignore = [
   "E203", # whitespace before ':'
   "W503", # line break before binary operator
