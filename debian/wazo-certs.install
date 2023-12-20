@@ -1,0 +1,2 @@
+openssl-x509.conf usr/share/wazo-certs
+bin/certificate-needs-subjectaltname usr/share/wazo-certs/bin

@@ -4,7 +4,7 @@ set -e
 
 case "$1" in
     remove)
-        rm -f /usr/share/xivo-certs/server.key /usr/share/xivo-certs/server.crt
+        rm -f /usr/share/wazo-certs/server.key /usr/share/wazo-certs/server.crt
     ;;
 
     purge|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)

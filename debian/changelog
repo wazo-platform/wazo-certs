@@ -1,4 +1,10 @@
-xivo-certs (16.13~~) xivo-dev; urgency=medium
+wazo-certs (24.01~20231219) wazo-dev-bullseye; urgency=medium
+
+  * Rename to wazo-certs
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Tue, 19 Dec 2023 15:04:23 -0500
+
+xivo-certs (16.13~20161004) xivo-dev; urgency=medium
 
   * Initial release.
 
