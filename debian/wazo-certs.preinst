@@ -13,7 +13,7 @@ case "$1" in
             mkdir -p /usr/share/wazo-certs
             mv "$old_key" "$new_key"
             mv "$old_cert" "$new_cert"
-        fi 
+        fi
 	;;
 	upgrade)
 	;;
