@@ -7,6 +7,9 @@ Standards-Version: 3.9.6
 
 Package: wazo-certs
 Architecture: all
+# Pre-Depends nginx is only a workaround to fix migration xivo-certs/wazo-certs
+# Remove after Bookworm migration
+Pre-Depends: nginx
 Depends:
  ${misc:Depends},
  openssl,
