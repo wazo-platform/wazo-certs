@@ -4,16 +4,6 @@ set -e
 
 case "$1" in
   install)
-     # Migration 24.01
-     new_key=/usr/share/wazo-certs/server.key
-     new_cert=/usr/share/wazo-certs/server.crt
-     old_key=/usr/share/xivo-certs/server.key
-     old_cert=/usr/share/xivo-certs/server.crt
-     if [ -e "$old_key" -a -e "$old_cert" ] ; then
-         mkdir -p /usr/share/wazo-certs
-         cp "$old_key" "$new_key"
-         cp "$old_cert" "$new_cert"
-     fi
   ;;
 
   upgrade)
