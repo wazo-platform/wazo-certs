@@ -1,4 +1,4 @@
-cryptography==3.3.2
+cryptography==38.0.4
 pyhamcrest
-pyopenssl==20.0.1
+pyopenssl==23.0.0
 pytest
