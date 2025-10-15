@@ -1,8 +1,8 @@
 - project:
     templates:
-      - wazo-tox-linters-310
-      - wazo-tox-py39
-      - debian-packaging-bullseye
+      - wazo-tox-linters-py311
+      - wazo-tox-py311
+      - debian-packaging-bookworm
     wazo-check:
       jobs:
         - certs-tox-integration
@@ -13,6 +13,6 @@
 - job:
     name: certs-tox-integration
     description: Run certs integration tests
-    parent: wazo-tox-integration-py39
+    parent: wazo-tox-integration-py311
     vars:
       docker_install_siblings: false
